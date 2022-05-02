@@ -47,7 +47,7 @@ function MidlePage() {
                     </p>
                 </Col>
                 <Col>
-                    <img src="assets/banner.png" style={{ width: '100%' }} />
+                    <img src="assets/img6.png" style={{ width: '100%' }} />
                 </Col>
             </Row>
         </Container>

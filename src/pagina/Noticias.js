@@ -24,6 +24,7 @@ function Noticia(props) {
             fluid
             style={{ padding: "6rem" }}
         >
+            <img src="/assets/img3.png" style={{ width: '100%' }} />
             <Container>
                 <Row>
                     <Col></Col>

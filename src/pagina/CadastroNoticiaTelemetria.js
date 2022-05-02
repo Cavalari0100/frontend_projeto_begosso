@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Container, Form, FormGroup, Label, Col, FormText, Input, Button } from "reactstrap";
 import axios from "axios";
-function CadastroNoticia() {
+function CadastroNoticiaTelemetria() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
-    const url = 'http://localhost:3001/novapostagem';
+    const url = 'http://localhost:3001/novapostagemtelemetria';
 
     const InsertNewPostagem = (e) => {
         e.preventDefault();
@@ -22,13 +22,14 @@ function CadastroNoticia() {
     const attPage = (e) => {
         window.location.reload();
     }
-    
+
     return (
         <Container
             className="bg-light border"
             fluid
             style={{ padding: "6rem" }}>
-                <img src="/assets/img5.png" style={{ width: '100%' }} />
+            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} />
+            <hr></hr>
             <Form onSubmit={InsertNewPostagem}>
                 <FormGroup row>
                     <Label
@@ -100,4 +101,4 @@ function CadastroNoticia() {
         </Container>
     )
 }
-export default CadastroNoticia;
+export default CadastroNoticiaTelemetria;

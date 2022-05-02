@@ -32,7 +32,19 @@ function SlideImg() {
                             <p>a</p>
                         </div>
                         <div>
-                            <img src="assets/banner.png" />
+                            <img src="assets/img2.png" />
+                            <p>a</p>
+                        </div>
+                        <div>
+                            <img src="assets/img3.png" />
+                            <p>a</p>
+                        </div>
+                        <div>
+                            <img src="assets/img4.png" />
+                            <p>a</p>
+                        </div>
+                        <div>
+                            <img src="assets/img5.png" />
                             <p>a</p>
                         </div>
                     

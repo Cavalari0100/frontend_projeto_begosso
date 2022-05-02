@@ -57,8 +57,13 @@ function BarraDeTarefa() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <NavLink href="/setores">
+                  <NavLink href="/hometelemetria">
                     Telemetria
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink href="/cadastronoticiatelemetria">
+                    Cadastro Noticia Telemetria
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>

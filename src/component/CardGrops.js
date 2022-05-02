@@ -37,7 +37,7 @@ function Cardgroups(props) {
                         <Card >
                             <CardImg
                                 alt="Card image cap"
-                                src="assets/banner.png"
+                                src="assets/img4.png"
                                 top
                                 width="100%"
                             />
