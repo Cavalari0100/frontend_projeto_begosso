@@ -7,6 +7,8 @@ import Noticia from './pagina/Noticias';
 import PostagensAnteriores from './pagina/PostagensAnteriores';
 import HomeTelemetria from './pagina/HomeTelemetria';
 import CadastroNoticiaTelemetria from './pagina/CadastroNoticiaTelemetria';
+import PostagensTelemetria from './pagina/PostagensTelemetria';
+import HomeBalanca from './pagina/HomeBalanca';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <Route path='/cadastronoticiatelemetria' exact component={CadastroNoticiaTelemetria} />
         <Route path='/postagem/:id' exact component={Noticia} />
         <Route path='/postagens' exact component={PostagensAnteriores} />
+        <Route path='/postagenstelemetria' exact component={PostagensTelemetria} />
         <Route path='/hometelemetria' exact component={HomeTelemetria} />
+        <Route path='/homebalanca' exact component={HomeBalanca} />
       </Switch>
     </Router>
   );

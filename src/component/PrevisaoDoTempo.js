@@ -57,6 +57,8 @@ function PrevisaoDoTempo() {
               <li>Temperatura minima: {weather['main']['temp_min']}°</li>
               <li>Pressão: {weather['main']['pressure']} hpa</li>
               <li>Humidade: {weather['main']['humidity']}%</li>
+              <li>Velocidade do vento: {weather['wind']['speed']}K/h</li>
+              <li>Qtd Nuvens: {weather['cloud']['all']}K/h</li>
             </ul>
           </Fragment>
         </div>

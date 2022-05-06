@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, FormGroup, Label, Col, FormText, Input, Button } from "reactstrap";
+import { Container, Form, FormGroup, Label, Col, Row, FormText, Input, Button } from "reactstrap";
 import axios from "axios";
 function CadastroNoticiaTelemetria() {
 
@@ -27,8 +27,17 @@ function CadastroNoticiaTelemetria() {
         <Container
             className="bg-light border"
             fluid
-            style={{ padding: "6rem" }}>
+            style={{ padding: "4rem" }}>
             <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} />
+            <Row>
+                <Col>
+                </Col>
+                <Col>
+                    <h3>Nova Postagem Telemetria</h3>
+                </Col>
+                <Col>
+                </Col>
+            </Row>
             <hr></hr>
             <Form onSubmit={InsertNewPostagem}>
                 <FormGroup row>

@@ -26,10 +26,14 @@ function FooterPage() {
                             sm="1"
                             xs="1"
                         >
-                            <Col><h2>Categorias</h2></Col>
-                            <Col>Noticias</Col>
-                            <Col>Historia</Col>
-                            <Col>Destaques</Col>
+                            <Col><h2>Setores</h2></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Iberia</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Telemetria</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Qualidade</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Balança</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>TI</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>PCTS</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>P&D</a></Col>
                         </Row>
                     </Col>
                     
@@ -40,10 +44,10 @@ function FooterPage() {
                             xs="1"
                         >
                             <Col><h2>Contatos</h2></Col>
-                            <Col>Facebook</Col>
-                            <Col>Instagram</Col>
-                            <Col>Twitter</Col>
-                            <Col>Tel: (18) 99999-9999</Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Facebook</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Instagram</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Email</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>(18)9999-999</a></Col>
                         </Row>
                     </Col>
                     <Col>

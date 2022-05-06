@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col, CardGroup } from "reactstrap";
-import Cardgroups from './CardGrops';
+import {Col , Container, Row } from "reactstrap";
+import CardsSetores from "./CardsSetores";
 function MidlePage() {
     return (
         <Container>
@@ -9,7 +9,7 @@ function MidlePage() {
                 md="2"
                 sm="2"
                 xs="1">
-                
+
                 <Col>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -50,6 +50,7 @@ function MidlePage() {
                     <img src="assets/img6.png" style={{ width: '100%' }} />
                 </Col>
             </Row>
+            <CardsSetores/>
         </Container>
     )
 }

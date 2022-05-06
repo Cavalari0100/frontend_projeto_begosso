@@ -18,7 +18,7 @@ function Home() {
                 </Row>
                 <hr></hr>
                 <Row>
-                    <Col><PrevisaoDoTempo/></Col>
+                    {/* <Col><PrevisaoDoTempo/></Col> */}
                 </Row>
                 <hr></hr>
                 <Row id="destaques">

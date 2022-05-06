@@ -4,13 +4,13 @@ import FooterPage from "../component/FooterPage";
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
-function HomeTelemetria() {
+function HomeBalanca() {
     const [data, setData] = useState([]);
     const [id, setId] = useState([]);
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:3001/postagemtelemetria');
+            const result = await axios('http://localhost:3001/postagembalanca');
             setData(result.data);
         };
 
@@ -26,7 +26,7 @@ function HomeTelemetria() {
     }
     return (
         <div style={{ paddingTop: '3em' }}>
-            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} />
+            <img src="/assets/bannerBalanca.png" style={{ width: '100%' }} />
             <Container >
                 <Row>
                     <Col>
@@ -74,7 +74,7 @@ function HomeTelemetria() {
                                     </p>
                                 </Col>
                                 <Col>
-                                    <img src="assets/bannerTelemetria.png" style={{ width: '100%' }} />
+                                    <img src="assets/img7.png" style={{ width: '100%' }} />
                                 </Col>
                             </Row>
                         </Container>
@@ -82,7 +82,7 @@ function HomeTelemetria() {
                 </Row>
                 <hr></hr>
                 <Row>
-                    {/* <Col><PrevisaoDoTempo /></Col> */}
+                     {/* <Col><PrevisaoDoTempo /></Col>  */}
                 </Row>
                 <hr></hr>
                 <Row id="destaques">
@@ -101,7 +101,7 @@ function HomeTelemetria() {
                                         <Card >
                                             <CardImg
                                                 alt="Card image cap"
-                                                src="assets/telemetriaImg.png"
+                                                src="assets/img7.png"
                                                 top
                                                 width="100%"
                                             />
@@ -140,4 +140,4 @@ function HomeTelemetria() {
         </div>
     )
 }
-export default HomeTelemetria;
+export default HomeBalanca;

@@ -62,18 +62,13 @@ function BarraDeTarefa() {
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/cadastronoticiatelemetria">
-                    Cadastro Noticia Telemetria
+                  <NavLink href="/homebalanca">
+                    Balança
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
                   <NavLink href="/setores">
                     Qualidade
-                  </NavLink>
-                </DropdownItem>
-                <DropdownItem>
-                  <NavLink href="/setores">
-                    Balança
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
@@ -91,7 +86,7 @@ function BarraDeTarefa() {
                     P&D
                   </NavLink>
                 </DropdownItem>
-                <DropdownItem/>
+                <DropdownItem />
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
