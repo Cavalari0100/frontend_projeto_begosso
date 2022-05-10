@@ -27,23 +27,23 @@ function SlideImg() {
             <Carousel infiniteLoop='true' showThumbs={false} interval='3000' width='100%' autoPlay='true' showArrows={false} dynamicHeight='true'>
                 
                         <div>
-                            <img src="assets/banner.png" />
+                            <img src="assets/banner.png" alt="imgFromIberia" />
                             <p>a</p>
                         </div>
                         <div>
-                            <img src="assets/img2.png" />
+                            <img src="assets/img2.png"  alt="imgFromIberia"/>
                             <p>a</p>
                         </div>
                         <div>
-                            <img src="assets/img3.png" />
+                            <img src="assets/img3.png"  alt="imgFromIberia"/>
                             <p>a</p>
                         </div>
                         <div>
-                            <img src="assets/img4.png" />
+                            <img src="assets/img4.png"  alt="imgFromIberia"/>
                             <p>a</p>
                         </div>
                         <div>
-                            <img src="assets/img5.png" />
+                            <img src="assets/img5.png"  alt="imgFromIberia"/>
                             <p>a</p>
                         </div>
                     

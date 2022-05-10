@@ -15,16 +15,16 @@ function App() {
   return (
     <Router>
       <BarraDeTarefa />
-      <BrowserRouter basename="/iberia">
+      <BrowserRouter basename={'/'}> 
       <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/cadastronoticia' exact component={CadastroNoticia} />
-        <Route path='/cadastronoticiatelemetria' exact component={CadastroNoticiaTelemetria} />
-        <Route path='/postagem/:id' exact component={Noticia} />
-        <Route path='/postagens' exact component={PostagensAnteriores} />
-        <Route path='/postagenstelemetria' exact component={PostagensTelemetria} />
-        <Route path='/hometelemetria' exact component={HomeTelemetria} />
-        <Route path='/homebalanca' exact component={HomeBalanca} />
+        <Route component={Home} path='/home'/>
+        <Route component={CadastroNoticia} path='/cadastronoticia'   />
+        <Route component={CadastroNoticiaTelemetria} path='/cadastronoticiatelemetria'   />
+        <Route component={Noticia} path='/postagem/:id'   />
+        <Route component={PostagensAnteriores} path='/postagens'   />
+        <Route component={PostagensTelemetria} path='/postagenstelemetria'   />
+        <Route component={HomeTelemetria} path='/hometelemetria'   />
+        <Route component={HomeBalanca} path='/homebalanca'   />
       </Switch>
       </BrowserRouter>
     </Router>

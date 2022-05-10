@@ -28,7 +28,7 @@ function CadastroNoticia() {
             className="bg-light border"
             fluid
             style={{ padding: "6rem" }}>
-                <img src="/assets/img5.png" style={{ width: '100%' }} />
+                <img src="/assets/img5.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Form onSubmit={InsertNewPostagem}>
                 <FormGroup row>
                     <Label

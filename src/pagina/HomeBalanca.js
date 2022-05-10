@@ -104,6 +104,7 @@ function HomeBalanca() {
                                                 src="assets/img7.png"
                                                 top
                                                 width="100%"
+                                                
                                             />
                                             <CardBody>
                                                 <CardTitle tag="h5">

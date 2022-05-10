@@ -25,8 +25,8 @@ function HomeTelemetria() {
         window.location.reload();
     }
     return (
-        <div style={{ paddingTop: '3em' }}>
-            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} />
+        <div style={{ paddingTop: '3em' }}> 
+            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Container >
                 <Row>
                     <Col>

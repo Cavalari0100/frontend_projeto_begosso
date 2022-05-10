@@ -28,7 +28,7 @@ function CadastroNoticiaTelemetria() {
             className="bg-light border"
             fluid
             style={{ padding: "4rem" }}>
-            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} />
+            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }}  alt="imgFromIberia"/>
             <Row>
                 <Col>
                 </Col>
