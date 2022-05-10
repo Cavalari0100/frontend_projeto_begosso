@@ -9,11 +9,13 @@ import HomeTelemetria from './pagina/HomeTelemetria';
 import CadastroNoticiaTelemetria from './pagina/CadastroNoticiaTelemetria';
 import PostagensTelemetria from './pagina/PostagensTelemetria';
 import HomeBalanca from './pagina/HomeBalanca';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <BarraDeTarefa />
+      <BrowserRouter basename="/iberia">
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/cadastronoticia' exact component={CadastroNoticia} />
@@ -24,6 +26,7 @@ function App() {
         <Route path='/hometelemetria' exact component={HomeTelemetria} />
         <Route path='/homebalanca' exact component={HomeBalanca} />
       </Switch>
+      </BrowserRouter>
     </Router>
   );
 }

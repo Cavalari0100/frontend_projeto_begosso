@@ -35,9 +35,9 @@ function PostagensAnteriores(props) {
                     return (
                         <Row>
                             <hr></hr>
-                            <Button style={{ backgroundColor: 'white' }} onClick={attPage}>
+                            
                                 <Link key={postagem} to={"/postagem/" + postagem._id} style={{ color: 'black', textDecoration: 'none' }}>{postagem.titulo}</Link>
-                            </Button>
+                            
                             <p style={{ maxWidth: "150ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{postagem.conteudo}</p>
                             <hr></hr>
                             <p style={{ maxWidth: "150ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Setor :{postagem.categoria}</p>

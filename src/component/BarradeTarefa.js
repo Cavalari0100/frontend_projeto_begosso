@@ -10,7 +10,7 @@ function BarraDeTarefa() {
         light
       >
         <NavbarBrand href="/">
-          Iberia
+          Bem-vindo a Usina Iberia
         </NavbarBrand>
         <NavbarToggler onClick={function noRefCheck() { }} />
         <Collapse navbar>

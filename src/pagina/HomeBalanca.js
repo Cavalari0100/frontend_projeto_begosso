@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CardGroup, Card, Col, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button, Container, Row } from "reactstrap";
-import FooterPage from "../component/FooterPage";
+import FooterPage from "../component/FooterPage"; 
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
