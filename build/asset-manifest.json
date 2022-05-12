@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb054e3d.css",
-    "main.js": "/static/js/main.9e16a555.js",
-    "static/js/787.c95c076e.chunk.js": "/static/js/787.c95c076e.chunk.js",
-    "index.html": "/index.html",
-    "main.fb054e3d.css.map": "/static/css/main.fb054e3d.css.map",
-    "main.9e16a555.js.map": "/static/js/main.9e16a555.js.map",
-    "787.c95c076e.chunk.js.map": "/static/js/787.c95c076e.chunk.js.map"
+    "main.css": "/iberia/public_html/static/css/main.9cdeea45.css",
+    "main.js": "/iberia/public_html/static/js/main.46843fb1.js",
+    "index.html": "/iberia/public_html/index.html",
+    "main.9cdeea45.css.map": "/iberia/public_html/static/css/main.9cdeea45.css.map",
+    "main.46843fb1.js.map": "/iberia/public_html/static/js/main.46843fb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb054e3d.css",
-    "static/js/main.9e16a555.js"
+    "static/css/main.9cdeea45.css",
+    "static/js/main.46843fb1.js"
   ]
 }

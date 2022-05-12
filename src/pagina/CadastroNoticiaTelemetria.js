@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, FormGroup, Label, Col, Row, FormText, Input, Button } from "reactstrap";
 import axios from "axios";
+import BarraDeTarefa from "../component/BarradeTarefa";
 function CadastroNoticiaTelemetria() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
@@ -28,6 +29,7 @@ function CadastroNoticiaTelemetria() {
             className="bg-light border"
             fluid
             style={{ padding: "4rem" }}>
+                <BarraDeTarefa/>
             <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }}  alt="imgFromIberia"/>
             <Row>
                 <Col>

@@ -4,6 +4,7 @@ import FooterPage from "../component/FooterPage";
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import BarraDeTarefa from "../component/BarradeTarefa";
 function HomeTelemetria() {
     const [data, setData] = useState([]);
     const [id, setId] = useState([]);
@@ -26,6 +27,7 @@ function HomeTelemetria() {
     }
     return (
         <div style={{ paddingTop: '3em' }}> 
+        <BarraDeTarefa/>
             <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Container >
                 <Row>

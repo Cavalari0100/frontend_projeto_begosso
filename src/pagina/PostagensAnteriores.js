@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Col, Container, Row, Button } from "reactstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import BarraDeTarefa from "../component/BarradeTarefa";
 function PostagensAnteriores(props) {
     const [data, setData] = useState([]);
 
@@ -22,6 +22,7 @@ function PostagensAnteriores(props) {
     }
     return (
         <div style={{ paddingTop: '3em' }}>
+            <BarraDeTarefa/>
             <Container>
                 <hr></hr>
                 <h2>Materias Ja postadas</h2>

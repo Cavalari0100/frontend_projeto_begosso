@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, FormGroup, Label, Col, FormText, Input, Button } from "reactstrap";
 import axios from "axios";
+import BarradeTarefa from '../component/BarradeTarefa';
 function CadastroNoticia() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
@@ -22,13 +23,15 @@ function CadastroNoticia() {
     const attPage = (e) => {
         window.location.reload();
     }
-    
+
     return (
         <Container
             className="bg-light border"
             fluid
             style={{ padding: "6rem" }}>
-                <img src="/assets/img5.png" style={{ width: '100%' }} alt="imgFromIberia" />
+
+            <BarradeTarefa />
+            <img src="/assets/img5.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Form onSubmit={InsertNewPostagem}>
                 <FormGroup row>
                     <Label

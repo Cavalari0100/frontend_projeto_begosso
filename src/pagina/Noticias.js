@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import axios from "axios";
+import BarraDeTarefa from "../component/BarradeTarefa";
 function Noticia(props) {
     const [data, setData] = useState({});
 
@@ -24,6 +25,7 @@ function Noticia(props) {
             fluid
             style={{ padding: "6rem" }}
         >
+            <BarraDeTarefa/>
             <img src="/assets/img3.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Container>
                 <Row>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from "reactstrap";
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
+import { Link } from "react-router-dom";
 function BarraDeTarefa() {
   return (
     <div>
@@ -19,9 +20,9 @@ function BarraDeTarefa() {
             navbar
           >
             <NavItem>
-              <NavLink href="/cadastronoticia">
+              <Link to={"/cadastronoticia"}>
                 Cadastrar Noticia
-              </NavLink>
+              </Link>
             </NavItem>
             <UncontrolledDropdown
               inNavbar
@@ -35,9 +36,9 @@ function BarraDeTarefa() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <NavLink href="/postagens">
+                  <Link to={"/postagens"}>
                     Noticias Anteriores
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
@@ -57,34 +58,34 @@ function BarraDeTarefa() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <NavLink href="/hometelemetria">
+                  <Link to={"/hometelemetria"}>
                     Telemetria
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/homebalanca">
+                  <Link to={"/homebalanca"}>
                     Balança
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/setores">
+                  <Link to={"/hometelemetria"}>
                     Qualidade
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/setores">
+                  <Link to={"/hometelemetria"}>
                     TI
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/setores">
+                  <Link to={"/hometelemetria"}>
                     PCTS
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink href="/setores">
+                  <Link to={"/hometelemetria"}>
                     P&D
-                  </NavLink>
+                  </Link>
                 </DropdownItem>
                 <DropdownItem />
               </DropdownMenu>

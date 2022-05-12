@@ -4,6 +4,7 @@ import FooterPage from "../component/FooterPage";
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import BarraDeTarefa from "../component/BarradeTarefa";
 function HomeBalanca() {
     const [data, setData] = useState([]);
     const [id, setId] = useState([]);
@@ -26,6 +27,7 @@ function HomeBalanca() {
     }
     return (
         <div style={{ paddingTop: '3em' }}>
+            <BarraDeTarefa/>
             <img src="/assets/bannerBalanca.png" style={{ width: '100%' }} />
             <Container >
                 <Row>
