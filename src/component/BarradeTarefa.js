@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav,NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
 import { Link } from "react-router-dom";
 function BarraDeTarefa() {
   return (
@@ -19,11 +19,6 @@ function BarraDeTarefa() {
             className="me-auto"
             navbar
           >
-            <NavItem>
-              <Link to={"/cadastronoticia"}>
-                Cadastrar Noticia
-              </Link>
-            </NavItem>
             <UncontrolledDropdown
               inNavbar
               nav
@@ -36,7 +31,7 @@ function BarraDeTarefa() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link to={"/postagens"}>
+                  <Link to={"/postagens"} style={{ textDecoration: 'none', color: 'black' }}>
                     Noticias Anteriores
                   </Link>
                 </DropdownItem>
@@ -58,35 +53,35 @@ function BarraDeTarefa() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link to={"/hometelemetria"}>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     Telemetria
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to={"/homebalanca"}>
+                  <Link to={"/homebalanca"} style={{ textDecoration: 'none', color: 'black' }}>
                     Balança
                   </Link>
                 </DropdownItem>
-                <DropdownItem>
-                  <Link to={"/hometelemetria"}>
+                {/* <DropdownItem>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     Qualidade
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to={"/hometelemetria"}>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     TI
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to={"/hometelemetria"}>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     PCTS
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to={"/hometelemetria"}>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     P&D
                   </Link>
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem />
               </DropdownMenu>
             </UncontrolledDropdown>

@@ -65,7 +65,7 @@ function CardsSetores() {
                                     <p style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Qualidade</p>
                                 </CardText>
                                 <Button onClick={attPage}>
-                                        <a href="/hometelemetria" style={{textDecoration:'none' , color:'white'}}>Acessar</a>
+                                        <a href="/paginaemdesenvolvimento" style={{textDecoration:'none' , color:'white'}}>Acessar</a>
                                 </Button>
                             </CardBody>
                         </Card>
@@ -85,7 +85,7 @@ function CardsSetores() {
                                     <p style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>TI</p>
                                 </CardText>
                                 <Button onClick={attPage}>
-                                        <a href="/hometelemetria" style={{textDecoration:'none' , color:'white'}}>Acessar</a>
+                                        <a href="/paginaemdesenvolvimento" style={{textDecoration:'none' , color:'white'}}>Acessar</a>
                                 </Button>
                             </CardBody>
                         </Card>
