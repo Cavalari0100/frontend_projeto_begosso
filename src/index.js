@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
 root.render(
-  <BrowserRouter basename={'/public_html/'}>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/home" element={<Home />} />
