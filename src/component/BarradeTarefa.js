@@ -33,7 +33,7 @@ function BarraDeTarefa(props) {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link to={"/postagens"} style={{ textDecoration: 'none', color: 'black' }}>
+                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
                     Noticias Anteriores
                   </Link>
                 </DropdownItem>
