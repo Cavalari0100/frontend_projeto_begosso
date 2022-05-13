@@ -33,7 +33,7 @@ function HomeTelemetria() {
                 <Row>
                     <Col>
                         <Container>
-                            <h1>Noticia Fixa sobre Telemetria</h1>
+                            <h1>Historia sobre nossa Telemetria</h1>
                             <Row
                                 md="2"
                                 sm="2"
@@ -60,7 +60,7 @@ function HomeTelemetria() {
                     {/* <Col><PrevisaoDoTempo /></Col> */}
                 </Row>
                 <hr></hr>
-                <Row id="destaques">
+{/*                 <Row id="destaques">
                     <Col>
                         <Row
                             md="3"
@@ -108,7 +108,7 @@ function HomeTelemetria() {
 
                         </Row>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
             <hr></hr>
             <FooterPage />
