@@ -26,8 +26,8 @@ function HomeTelemetria() {
         window.location.reload();
     }
     return (
-        <div style={{ paddingTop: '3em' }}> 
-        <BarraDeTarefa/>
+        <div style={{ paddingTop: '3em' }}>
+            <BarraDeTarefa />
             <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Container >
                 <Row>
@@ -41,38 +41,11 @@ function HomeTelemetria() {
 
                                 <Col>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type
-                                        specimen book. It has survived not only five centuries, but also the leap
-                                        into electronic typesetting, remaining essentially unchanged. It was popularised
-                                        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker including
-                                        versions of Lorem Ipsum.
-                                    </p>
-                                </Col>
-                                <Col>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type
-                                        specimen book. It has survived not only five centuries, but also the leap
-                                        into electronic typesetting, remaining essentially unchanged. It was popularised
-                                        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker including
-                                        versions of Lorem Ipsum.
-                                    </p>
-                                </Col>
-                                <Col>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type
-                                        specimen book. It has survived not only five centuries, but also the leap
-                                        into electronic typesetting, remaining essentially unchanged. It was popularised
-                                        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker including
-                                        versions of Lorem Ipsum.
+                                        O projeto de telemetria agrícola teve seu início na iberia no ano de 2015,
+                                        com o monitoramento dos equipamentos de colheita, neste mesmo ano implantamos
+                                        mais dois projetos,  FUT (Fila unica de Transbordo) e CDC (Certificado Digital de Cana)
+                                        , deixando todo o CTT 100% automatizado. No ano de 2017 iniciamos com mais um projeto
+                                        chamado TPL, onde colocamos os computadores de bordo para controlar as operações agrícolas.
                                     </p>
                                 </Col>
                                 <Col>
