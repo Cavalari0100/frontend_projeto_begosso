@@ -1,7 +1,9 @@
-import React from "react";
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav,NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
+import React , {useState} from "react";
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
 import { Link } from "react-router-dom";
-function BarraDeTarefa() {
+function BarraDeTarefa(props) {
+  const [collapsed, setCollapsed] = useState(true);
+  const toggleNavbar = () => setCollapsed(!collapsed);
   return (
     <div>
       <Navbar
@@ -13,8 +15,8 @@ function BarraDeTarefa() {
         <NavbarBrand href="/">
           Usina Iberia
         </NavbarBrand>
-        <NavbarToggler onClick={function noRefCheck() { }} />
-        <Collapse navbar>
+        <NavbarToggler onClick={toggleNavbar} />
+        <Collapse navbar isOpen={!collapsed}>
           <Nav
             className="me-auto"
             navbar
