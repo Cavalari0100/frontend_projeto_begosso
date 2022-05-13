@@ -16,7 +16,7 @@ function CardsSetores() {
                         <Card >
                             <CardImg
                                 alt="Card image cap"
-                                src="assets/telemetriaImg.png"
+                                src="assets/bannerTelemetria.png"
                                 top
                                 width="100%"
                             />
@@ -36,7 +36,7 @@ function CardsSetores() {
                         <Card >
                             <CardImg
                                 alt="Card image cap"
-                                src="assets/telemetriaImg.png"
+                                src="assets/bannerBalanca.png"
                                 top
                                 width="100%"
                             />
