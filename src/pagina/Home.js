@@ -20,15 +20,13 @@ function Home() {
                 <Row>
                     <Col><PrevisaoDoTempo/></Col>
                 </Row>
-                <hr></hr>
+                <br></br>
                 <Row id="destaques">
                     <Col>
                         <Cardgroups/>
                     </Col>
                 </Row>
-                
             </Container>
-            <hr></hr>
             <FooterPage/>
         </div>
     )

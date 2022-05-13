@@ -55,11 +55,9 @@ function HomeTelemetria() {
                         </Container>
                     </Col>
                 </Row>
-                <hr></hr>
                 <Row>
                     {/* <Col><PrevisaoDoTempo /></Col> */}
                 </Row>
-                <hr></hr>
 {/*                 <Row id="destaques">
                     <Col>
                         <Row
@@ -110,7 +108,6 @@ function HomeTelemetria() {
                     </Col>
                 </Row> */}
             </Container>
-            <hr></hr>
             <FooterPage />
         </div>
     )

@@ -50,6 +50,7 @@ function MidlePage() {
                     <img src="assets/img6.png" style={{ width: '100%' }} alt="imgFromIberia" />
                 </Col>
             </Row>
+            <hr></hr>
             <CardsSetores/>
         </Container>
     )

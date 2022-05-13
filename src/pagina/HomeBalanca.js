@@ -82,11 +82,10 @@ function HomeBalanca() {
                         </Container>
                     </Col>
                 </Row>
-                <hr></hr>
                 <Row>
                      {/* <Col><PrevisaoDoTempo /></Col>  */}
                 </Row>
-                <hr></hr>
+                {/* <hr></hr>
                 <Row id="destaques">
                     <Col>
                         <Row
@@ -136,9 +135,8 @@ function HomeBalanca() {
 
                         </Row>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
-            <hr></hr>
             <FooterPage />
         </div>
     )

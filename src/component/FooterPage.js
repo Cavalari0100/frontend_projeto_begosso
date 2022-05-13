@@ -13,7 +13,6 @@ function FooterPage() {
                     <Col style={{ fontSize: '20px' }}></Col>
                     <Col><img src="assets/logo-pauxi-mitu.png" width='100%'></img></Col>
                 </Row> */}
-                <hr></hr>
                 <Row
                     md="3"
                     sm="2"
@@ -27,13 +26,13 @@ function FooterPage() {
                             xs="1"
                         >
                             <Col><h2>Setores</h2></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Iberia</a></Col>
+                            <Col><a href='/' style={{textDecoration:'none' , color:'white'}}>Iberia</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Telemetria</a></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Qualidade</a></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Balança</a></Col>
+                            <Col><a href='/homebalanca' style={{textDecoration:'none' , color:'white'}}>Balança</a></Col>
+                            {/* <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Qualidade</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>TI</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>PCTS</a></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>P&D</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>P&D</a></Col> */}
                         </Row>
                     </Col>
                     
@@ -44,10 +43,11 @@ function FooterPage() {
                             xs="1"
                         >
                             <Col><h2>Contatos</h2></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Facebook</a></Col>
+                            {/* <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Facebook</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Instagram</a></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Email</a></Col>
-                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>(18)9999-999</a></Col>
+                            <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Email</a></Col> */}
+                            <Col><a style={{textDecoration:'none' , color:'white'}}>Telefone :</a></Col>
+                            <Col><a style={{textDecoration:'none' , color:'white'}}>(18) 3367-9090</a></Col>
                         </Row>
                     </Col>
                     <Col>
