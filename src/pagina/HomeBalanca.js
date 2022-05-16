@@ -33,7 +33,7 @@ function HomeBalanca() {
                 <Row>
                     <Col>
                         <Container>
-                            <h1>Noticia Fixa sobre Telemetria</h1>
+                            <h1>Noticia Fixa sobre a Balança</h1>
                             <Row
                                 md="2"
                                 sm="2"
