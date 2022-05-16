@@ -56,7 +56,7 @@ function CardsSetores() {
                         <Card >
                             <CardImg
                                 alt="Card image cap"
-                                src="assets/bannerqualidade.png"
+                                src="assets/bannerQualidade.png"
                                 top
                                 width="100%"
                             />
