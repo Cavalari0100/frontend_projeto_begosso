@@ -29,6 +29,8 @@ function FooterPage() {
                             <Col><a href='/' style={{textDecoration:'none' , color:'white'}}>Iberia</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Telemetria</a></Col>
                             <Col><a href='/homebalanca' style={{textDecoration:'none' , color:'white'}}>Balança</a></Col>
+                            <Col><a href='/homequalidade' style={{textDecoration:'none' , color:'white'}}>qualidade</a></Col>
+                            <Col><a href='/homepcts' style={{textDecoration:'none' , color:'white'}}>PCTS</a></Col>
                             {/* <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>Qualidade</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>TI</a></Col>
                             <Col><a href='/hometelemetria' style={{textDecoration:'none' , color:'white'}}>PCTS</a></Col>
