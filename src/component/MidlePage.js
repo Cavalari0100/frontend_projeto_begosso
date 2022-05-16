@@ -23,7 +23,7 @@ function MidlePage() {
                     </p>
                 </Col>
                 <Col>
-                    <img src="assets/img6.png" style={{ width: '100%' }} alt="imgFromIberia" />
+                    <img src="assets/histIberia.png" style={{ width: '100%' }} alt="imgFromIberia" />
                 </Col>
                 <Col>
                     <p style={{textAlign:"justify"}}>
