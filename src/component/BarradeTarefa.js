@@ -64,6 +64,16 @@ function BarraDeTarefa(props) {
                     Balança
                   </Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to={"/homequalidade"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Qualidade
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to={"/homepcts"} style={{ textDecoration: 'none', color: 'black' }}>
+                    PCTS
+                  </Link>
+                </DropdownItem>
                 {/* <DropdownItem>
                   <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     Qualidade
