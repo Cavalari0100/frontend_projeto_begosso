@@ -7,7 +7,7 @@ function Noticia(props) {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:3001/postagem/' + props.match.params.id);
+            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + props.match.params.id);
             setData(result.data);
         };
 

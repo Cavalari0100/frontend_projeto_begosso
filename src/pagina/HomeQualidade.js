@@ -11,7 +11,7 @@ function HomeQualidade() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:3001/postagemqualidade');
+            const result = await axios('https://serviceiberia.herokuapp.com/postagemqualidade');
             setData(result.data);
         };
 

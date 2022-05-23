@@ -5,7 +5,7 @@ import BarradeTarefa from '../component/BarradeTarefa';
 function CadastroNoticia() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
-    const url = 'http://localhost:3001/novapostagem';
+    const url = 'https://serviceiberia.herokuapp.com/novapostagem';
 
     const InsertNewPostagem = (e) => {
         e.preventDefault();

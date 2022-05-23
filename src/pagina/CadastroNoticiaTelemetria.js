@@ -5,7 +5,7 @@ import BarraDeTarefa from "../component/BarradeTarefa";
 function CadastroNoticiaTelemetria() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
-    const url = 'http://localhost:3001/novapostagemtelemetria';
+    const url = 'https://serviceiberia.herokuapp.com/novapostagemtelemetria';
 
     const InsertNewPostagem = (e) => {
         e.preventDefault();

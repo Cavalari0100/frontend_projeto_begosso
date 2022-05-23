@@ -11,7 +11,7 @@ function HomeBalanca() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:3001/postagembalanca');
+            const result = await axios('https://serviceiberia.herokuapp.com/postagembalanca');
             setData(result.data);
         };
 
