@@ -8,7 +8,7 @@ function Cardgroups(props) {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:3001/postagem');
+            const result = await axios('https://serviceiberia.herokuapp.com/postagem');
             setData(result.data);
         };
 
