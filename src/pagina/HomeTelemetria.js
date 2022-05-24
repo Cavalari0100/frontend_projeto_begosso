@@ -40,7 +40,7 @@ function HomeTelemetria() {
                                 xs="1">
 
                                 <Col>
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         O projeto de telemetria agrícola teve seu início na iberia no ano de 2015,
                                         com o monitoramento dos equipamentos de colheita, neste mesmo ano implantamos
                                         mais dois projetos,  FUT (Fila unica de Transbordo) e CDC (Certificado Digital de Cana)
@@ -59,7 +59,7 @@ function HomeTelemetria() {
                 <Row>
                     {/* <Col><PrevisaoDoTempo /></Col> */}
                 </Row>
-{/*                 <Row id="destaques">
+                <Row id="destaques">
                     <Col>
                         <Row
                             md="3"
@@ -107,7 +107,7 @@ function HomeTelemetria() {
 
                         </Row>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
             <FooterPage />
         </div>

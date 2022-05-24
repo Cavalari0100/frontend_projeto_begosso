@@ -62,7 +62,7 @@ function HomeQualidade() {
                 <Row>
                     {/* <Col><PrevisaoDoTempo /></Col> */}
                 </Row>
-                {/*                 <Row id="destaques">
+                                <Row id="destaques">
                     <Col>
                         <Row
                             md="3"
@@ -99,7 +99,7 @@ function HomeQualidade() {
                                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
                                                 </CardText>
                                                 <Button onClick={attPage}>
-                                                    <Link key={postagem} to={"/postagemtelemetria/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
+                                                    <Link key={postagem} to={"/postagemqualidade/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
                                                 </Button>
                                             </CardBody>
                                         </Card>
@@ -110,7 +110,7 @@ function HomeQualidade() {
 
                         </Row>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
             <FooterPage />
         </div>

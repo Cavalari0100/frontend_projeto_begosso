@@ -40,7 +40,7 @@ function HomePcts() {
                                 xs="1">
 
                                 <Col>
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -62,7 +62,7 @@ function HomePcts() {
                 <Row>
                     {/* <Col><PrevisaoDoTempo /></Col> */}
                 </Row>
-                {/*                 <Row id="destaques">
+                <Row id="destaques">
                     <Col>
                         <Row
                             md="3"
@@ -99,7 +99,7 @@ function HomePcts() {
                                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
                                                 </CardText>
                                                 <Button onClick={attPage}>
-                                                    <Link key={postagem} to={"/postagemtelemetria/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
+                                                    <Link key={postagem} to={"/postagempcts/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
                                                 </Button>
                                             </CardBody>
                                         </Card>
@@ -110,7 +110,7 @@ function HomePcts() {
 
                         </Row>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
             <FooterPage />
         </div>
