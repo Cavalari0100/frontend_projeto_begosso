@@ -14,7 +14,9 @@ function Noticia(props) {
         GetData();
 
     }, []);
+
     console.log(props.match.params.id)
+
     let noticia = {
         titulo: data.titulo
     }
