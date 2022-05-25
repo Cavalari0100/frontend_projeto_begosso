@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
+import {useParams} from "react-router-dom"
 import { Button, Col, Container, Row } from "reactstrap";
 import axios from "axios";
 import BarraDeTarefa from "../component/BarradeTarefa";
 function Noticia(props) {
     const [data, setData] = useState({});
-
+    const {id} = useParams()
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + props.match.params.id);
+            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + id);
             setData(result.data);
         };
 
         GetData();
 
     }, []);
-
-    console.log(props.match.params.id)
+    console.log(data)
 
     let noticia = {
         titulo: data.titulo
