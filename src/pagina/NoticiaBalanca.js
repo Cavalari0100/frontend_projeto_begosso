@@ -3,13 +3,13 @@ import {useParams} from "react-router-dom"
 import { Button, Col, Container, Row } from "reactstrap";
 import axios from "axios";
 import BarraDeTarefa from "../component/BarradeTarefa";
-function Noticia(props) {
+function NoticiaBalanca(props) {
     const {id} = useParams()
     const [data, setData] = useState({});
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + id);
+            const result = await axios('https://serviceiberia.herokuapp.com/postagembalanca/' + id);
             setData(result.data);
         };
 
@@ -56,4 +56,4 @@ console.log(data)
         </Container>
     )
 }
-export default Noticia;
+export default NoticiaBalanca;
