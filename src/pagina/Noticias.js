@@ -9,7 +9,7 @@ function Noticia(props) {
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + id);
+            const result = await axios('https://serviceiberia.herokuapp.com/postagemtelemetria/' + id);
             setData(result.data);
         };
 
