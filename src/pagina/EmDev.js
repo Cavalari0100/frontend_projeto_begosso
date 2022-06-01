@@ -1,12 +1,14 @@
 import React from "react"
-import { Button, Container } from "reactstrap";
+import { Button, Col, Container, Row } from "reactstrap";
 import BarraDeTarefa from "../component/BarradeTarefa";
 function EmDev() {
     return (
         <div style={{ paddingTop: '4em' }}>
             <BarraDeTarefa />
             <Container>
-                <h1>PAGINA EM CONSTRUÇÃO</h1>
+                <Row>
+                    <h2>Pagina em construção,por favor contacte o desenvolvedor do site e retorne a pagina inicial...</h2>
+                </Row>
                 <Button href='/'>Pagina Inicial</Button>
             </Container>
         </div>

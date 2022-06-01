@@ -4,8 +4,9 @@ import { Button, Col, Container, Row } from "reactstrap";
 import axios from "axios";
 import BarraDeTarefa from "../component/BarradeTarefa";
 function Noticia(props) {
-    const [data, setData] = useState({});
     const {id} = useParams()
+    const [data, setData] = useState({});
+    
     useEffect(() => {
         const GetData = async () => {
             const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + id);
@@ -13,10 +14,8 @@ function Noticia(props) {
         };
 
         GetData();
-
+console.log(data)
     }, []);
-    console.log(data)
-
     let noticia = {
         titulo: data.titulo
     }
@@ -48,9 +47,9 @@ function Noticia(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <Col><Button href='/'>Pagina Inicial</Button></Col>
                     <Col></Col>
-                    <Col><Button href='/setores'>Pagina de setores</Button></Col>
+                    <Col></Col>
+                    <Col><div><Button href='/'>Pagina Inicial</Button></div></Col>
                 </Row>
 
             </Container>

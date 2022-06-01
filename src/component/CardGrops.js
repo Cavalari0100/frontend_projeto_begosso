@@ -54,9 +54,6 @@ function Cardgroups(props) {
                                 <CardText>
                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{postagem.conteudo}</p>
                                 </CardText>
-                                <CardText>
-                                    <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
-                                </CardText>
                                 <Button onClick={attPage}>
                                     <Link key={postagem} to={"/postagem/" + postagem._id} style={{color:'white' , textDecoration:'none'}}>Mais..</Link>
                                 </Button>

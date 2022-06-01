@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
 import { Link } from "react-router-dom";
 function BarraDeTarefa(props) {
@@ -39,7 +39,9 @@ function BarraDeTarefa(props) {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Login
+                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Login
+                  </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

@@ -21,6 +21,7 @@ function CadastroNoticia() {
     }
 
     const attPage = (e) => {
+        alert('Noticia cadastrada com sucesso!!');
         window.location.reload();
     }
 
