@@ -11,7 +11,7 @@ function HomeTelemetria() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://serviceiberia.herokuapp.com/postagemtelemetria');
+            const result = await axios('https://serviceiberia.herokuapp.com/postagemtelemetria');
             setData(result.data);
         };
 
