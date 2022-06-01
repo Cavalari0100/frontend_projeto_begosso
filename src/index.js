@@ -33,6 +33,7 @@ root.render(
       <Route path='/b7b282fa9f614135b66cc08979b7e6f1' element={<CadastroNoticia />} />
       <Route path='/0eb139050ed34360a93615e727c445d2' element={<CadastroNoticiaTelemetria />} />
       <Route path='/postagem/:id' element={<Noticia />} />
+      <Route path='/postagemtelemetria/:id' element={<Noticia />} />
       <Route path='/postagens' element={<PostagensAnteriores />} />
       <Route path='/postagenstelemetria' element={<PostagensTelemetria />} />
       <Route path='/paginaemdesenvolvimento' element={<EmDev />} />

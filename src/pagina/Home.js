@@ -1,5 +1,5 @@
 import React from "react";
-import { Container ,Row,Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Cardgroups from "../component/CardGrops";
 import FooterPage from "../component/FooterPage";
 import MidlePage from "../component/MidlePage";
@@ -9,7 +9,7 @@ import SlideImg from "../component/SlideImg";
 function Home() {
     return (
         <div style={{ paddingTop: '3em' }}>
-            <SlideImg/>
+            <SlideImg />
             <Container >
                 <Row>
                     <Col>
@@ -18,16 +18,17 @@ function Home() {
                 </Row>
                 <hr></hr>
                 <Row>
-                    <Col><PrevisaoDoTempo/></Col>
+                    <Col><PrevisaoDoTempo /></Col>
                 </Row>
                 <br></br>
                 <Row id="destaques">
                     <Col>
-                        <Cardgroups/>
+                        <Cardgroups />
                     </Col>
                 </Row>
+                <br></br>
             </Container>
-            <FooterPage/>
+            <FooterPage />
         </div>
     )
 }

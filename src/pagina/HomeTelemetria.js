@@ -11,7 +11,7 @@ function HomeTelemetria() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemtelemetria');
+            const result = await axios('http://serviceiberia.herokuapp.com/postagemtelemetria/');
             setData(result.data);
         };
 
@@ -71,7 +71,7 @@ function HomeTelemetria() {
                                 const ultimo = data.length - 1;
                                 const antepenltimo = data.length - 3;
                                 return (
-                                    <CardGroup style={{ padding: '1em', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+                                    <CardGroup style={{ width:'430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                         <Card >
                                             <CardImg
                                                 alt="Card image cap"
@@ -103,9 +103,8 @@ function HomeTelemetria() {
                                     </CardGroup>
                                 )
                             })}
-
-
                         </Row>
+                        <br></br>
                     </Col>
                 </Row>
             </Container>

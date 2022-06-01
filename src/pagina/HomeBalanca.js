@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CardGroup, Card, Col, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button, Container, Row } from "reactstrap";
-import FooterPage from "../component/FooterPage"; 
+import FooterPage from "../component/FooterPage";
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ function HomeBalanca() {
     }
     return (
         <div style={{ paddingTop: '3em' }}>
-            <BarraDeTarefa/>
+            <BarraDeTarefa />
             <img src="/assets/bannerBalanca.png" style={{ width: '100%' }} />
             <Container >
                 <Row>
@@ -40,7 +40,7 @@ function HomeBalanca() {
                                 xs="1">
 
                                 <Col>
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -55,7 +55,7 @@ function HomeBalanca() {
                                     <img src="assets/img7.png" style={{ width: '100%' }} />
                                 </Col>
                                 <Col>
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -67,7 +67,7 @@ function HomeBalanca() {
                                     </p>
                                 </Col>
                                 <Col>
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -78,14 +78,14 @@ function HomeBalanca() {
                                         versions of Lorem Ipsum.
                                     </p>
                                 </Col>
-                                
+
                             </Row>
                         </Container>
                     </Col>
                 </Row>
                 <hr></hr>
                 <Row>
-                     {/* <Col><PrevisaoDoTempo /></Col>  */}
+                    {/* <Col><PrevisaoDoTempo /></Col>  */}
                 </Row>
                 <hr></hr>
                 <Row id="destaques">
@@ -100,14 +100,14 @@ function HomeBalanca() {
                                 const ultimo = data.length - 1;
                                 const antepenltimo = data.length - 3;
                                 return (
-                                    <CardGroup style={{ padding: '1em', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+                                    <CardGroup style={{ width: '430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                         <Card >
                                             <CardImg
                                                 alt="Card image cap"
                                                 src="assets/img7.png"
                                                 top
                                                 width="100%"
-                                                
+
                                             />
                                             <CardBody>
                                                 <CardTitle tag="h5">
@@ -133,9 +133,8 @@ function HomeBalanca() {
                                     </CardGroup>
                                 )
                             })}
-
-
                         </Row>
+                        <br></br>
                     </Col>
                 </Row>
             </Container>

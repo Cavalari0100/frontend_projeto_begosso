@@ -74,7 +74,7 @@ function HomePcts() {
                                 const ultimo = data.length - 1;
                                 const antepenltimo = data.length - 3;
                                 return (
-                                    <CardGroup style={{ padding: '1em', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+                                    <CardGroup style={{ width: '430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                         <Card >
                                             <CardImg
                                                 alt="Card image cap"
@@ -106,8 +106,7 @@ function HomePcts() {
                                     </CardGroup>
                                 )
                             })}
-
-
+                            <br></br>
                         </Row>
                     </Col>
                 </Row>
