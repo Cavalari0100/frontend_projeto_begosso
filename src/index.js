@@ -19,6 +19,7 @@ import HomeQualidade from "./pagina/HomeQualidade";
 import HomePcts from "./pagina/HomePcts";
 import NoticiaTelemetria from "./pagina/NoticiaTelemetria";
 import NoticiaBalanca from "./pagina/NoticiaBalanca";
+import NoticiaPcts from "./pagina/PostagemPcts";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -39,6 +40,7 @@ root.render(
       <Route path='/postagembalanca/:id' element={<NoticiaBalanca />} />
       <Route path='/postagens' element={<PostagensAnteriores />} />
       <Route path='/postagenstelemetria' element={<PostagensTelemetria />} />
+      <Route path='/postagempcts/:id' element={<NoticiaPcts />} />
       <Route path='/paginaemdesenvolvimento' element={<EmDev />} />
     </Routes>
   </BrowserRouter>

@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
+
 function PrevisaoDoTempo() {
 
   const [location, setLocation] = useState(false);
@@ -46,20 +47,23 @@ function PrevisaoDoTempo() {
       )
     } else {
       return (
-        <div style={{padding: '1em' , boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}>
-          <Fragment>
-            <h4>Tempo/Clima de hoje </h4>
-            <p><b>{weather['weather'][0]['description']}</b></p>
-            <hr />
-            <ul>
-              <li>Temperatura atual: {weather['main']['temp']}°</li>
-              <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
-              <li>Temperatura minima: {weather['main']['temp_min']}°</li>
-              <li>Pressão: {weather['main']['pressure']} hpa</li>
-              <li>Humidade: {weather['main']['humidity']}%</li>
-              <li>Velocidade do vento: {weather['wind']['speed']}K/h</li>
-            </ul>
-          </Fragment>
+        <div>
+          <div style={{ padding: '1em', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+            <Fragment>
+              <h4>Tempo/Clima de hoje </h4>
+              <p><b>{weather['weather'][0]['description']}</b></p>
+              <hr />
+              <ul>
+                <li>Temperatura atual: {weather['main']['temp']}°</li>
+                <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
+                <li>Temperatura minima: {weather['main']['temp_min']}°</li>
+                <li>Pressão: {weather['main']['pressure']} hpa</li>
+                <li>Humidade: {weather['main']['humidity']}%</li>
+                <li>Velocidade do vento: {weather['wind']['speed']}K/h</li>
+              </ul>
+            </Fragment>
+          </div>
+
         </div>
       );
     }
