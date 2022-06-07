@@ -20,6 +20,9 @@ import HomePcts from "./pagina/HomePcts";
 import NoticiaTelemetria from "./pagina/NoticiaTelemetria";
 import NoticiaBalanca from "./pagina/NoticiaBalanca";
 import NoticiaPcts from "./pagina/PostagemPcts";
+import PostagensTi from "./pagina/Postagemti";
+import NoticiaTi from "./pagina/NoticiaTi";
+import HomeTi from "./pagina/HomeTi";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -30,6 +33,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/home" element={<Home />} />
       <Route path="/hometelemetria" element={<HomeTelemetria />} />
+      <Route path="/hometi" element={<HomeTi />} />
       <Route path="/homebalanca" element={<HomeBalanca />} />
       <Route path="/homequalidade" element={<HomeQualidade />} />
       <Route path="/homepcts" element={<HomePcts />} />
@@ -37,9 +41,11 @@ root.render(
       <Route path='/0eb139050ed34360a93615e727c445d2' element={<CadastroNoticiaTelemetria />} />
       <Route path='/postagem/:id' element={<Noticia />} />
       <Route path='/postagemtelemetria/:id' element={<NoticiaTelemetria />} />
+      <Route path='/postagemti/:id' element={<NoticiaTi />} />
       <Route path='/postagembalanca/:id' element={<NoticiaBalanca />} />
       <Route path='/postagens' element={<PostagensAnteriores />} />
       <Route path='/postagenstelemetria' element={<PostagensTelemetria />} />
+      <Route path='/postagensti' element={<PostagensTi />} />
       <Route path='/postagempcts/:id' element={<NoticiaPcts />} />
       <Route path='/paginaemdesenvolvimento' element={<EmDev />} />
     </Routes>

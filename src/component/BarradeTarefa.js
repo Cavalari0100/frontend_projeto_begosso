@@ -76,6 +76,11 @@ function BarraDeTarefa(props) {
                     PCTS
                   </Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to={"/hometi"} style={{ textDecoration: 'none', color: 'black' }}>
+                    TI
+                  </Link>
+                </DropdownItem>
                 {/* <DropdownItem>
                   <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     Qualidade
