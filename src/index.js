@@ -23,6 +23,8 @@ import NoticiaPcts from "./pagina/PostagemPcts";
 import PostagensTi from "./pagina/Postagemti";
 import NoticiaTi from "./pagina/NoticiaTi";
 import HomeTi from "./pagina/HomeTi";
+import LoginPage from "./pagina/Login";
+import CadastroFuncionario from "./pagina/CadastroFuncionario";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -48,6 +50,8 @@ root.render(
       <Route path='/postagensti' element={<PostagensTi />} />
       <Route path='/postagempcts/:id' element={<NoticiaPcts />} />
       <Route path='/paginaemdesenvolvimento' element={<EmDev />} />
+      <Route path='/autenticacao' element={<LoginPage/>} />
+      <Route path='/cadastro/funcionario' element={<CadastroFuncionario />} />
     </Routes>
   </BrowserRouter>
 );

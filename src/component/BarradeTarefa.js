@@ -1,9 +1,42 @@
 import React, { useState } from "react";
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavLink, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, UncontrolledDropdown, Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 function BarraDeTarefa(props) {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => setCollapsed(!collapsed);
+
+  function logout() {
+    function garbageLocalStorage() {
+      localStorage.removeItem('token')
+    }
+
+    return (
+      <NavLink onClick={() => garbageLocalStorage()} href="/">Log Out</NavLink>
+    )
+  }
+  function isLogin() {
+    if (!props.user) {
+      return (
+        <NavLink href="/autenticacao">Login</NavLink>
+      )
+    }
+  }
+  function HandleUser() {
+    if (props.user) {
+      return (
+        <Row>
+          
+          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
+          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
+          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
+          <Col><NavLink style={{fontSize:"22px"}} >{props.user.email}</NavLink></Col>
+        </Row>
+      )
+    }
+  }
+  const JoinPage = () => {
+    props.history.push("/")
+}
   return (
     <div>
       <Navbar
@@ -12,9 +45,8 @@ function BarraDeTarefa(props) {
         fixed="top"
         light
       >
-        <NavbarBrand href="/">
-          Usina Iberia
-        </NavbarBrand>
+        <NavbarBrand href="/"><h1>Iberia</h1></NavbarBrand>
+        
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse navbar isOpen={!collapsed}>
           <Nav
@@ -32,15 +64,17 @@ function BarraDeTarefa(props) {
                 Menu
               </DropdownToggle>
               <DropdownMenu right>
+                <DropdownItem divider />
                 <DropdownItem>
-                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
-                    Noticias Anteriores
-                  </Link>
+                  <NavItem href="/autenticacao">{isLogin()}</NavItem>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavItem onClick={() => localStorage.removeItem('login')}>{logout()}</NavItem>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
-                    Login
+                  <Link to={"/cadastro/funcionario"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Cadastro Funcionario
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
@@ -56,6 +90,11 @@ function BarraDeTarefa(props) {
                 Setores
               </DropdownToggle>
               <DropdownMenu right>
+              <DropdownItem>
+                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Noticias Anteriores
+                  </Link>
+                </DropdownItem>
                 <DropdownItem>
                   <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
                     Telemetria
@@ -104,6 +143,7 @@ function BarraDeTarefa(props) {
                 <DropdownItem />
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem>{HandleUser()}</NavItem>
           </Nav>
         </Collapse>
       </Navbar>
