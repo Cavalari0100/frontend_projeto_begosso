@@ -20,7 +20,7 @@ function LoginPage(props) {
             localStorage.setItem('token', result.token);
             window.location = "/" 
         } else {
-            alert("Você esta com problema de BIOs (bixo ignorante operando o sistema) ERRO!!!!!!")
+            alert('Ops algo de errado aconteceu com o seu login, verifique suas credenciais de acesso!!!')
         }
     };
 
@@ -55,15 +55,6 @@ function LoginPage(props) {
                             </Col>
                         </Row>
                         <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" block onClick={() => LoginUsuario()}>Login</Button>
-                        <hr></hr>
-                        <Row>
-                            <Col md={6}>
-                                <p>Ainda não possui cadastro ? cadastre-se aqui</p>
-                            </Col>
-                            <Col md={6}>
-                                <Button  style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" block onClick={JoinPage}>Register</Button>
-                            </Col>
-                        </Row>
                     </CardBody>
                 </Card>
             </div>

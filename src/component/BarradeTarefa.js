@@ -25,18 +25,16 @@ function BarraDeTarefa(props) {
     if (props.user) {
       return (
         <Row>
-          
-          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
-          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
-          <Col><NavLink href="/cadastro/funcionario">Cadastro de Funcionario</NavLink></Col>
-          <Col><NavLink style={{fontSize:"22px"}} >{props.user.email}</NavLink></Col>
+          <Col><NavLink href="/paineldecadastros/3q1rsod2fr02b2b7nfemxntq3d3d">Cadastros</NavLink></Col>
+          <Col><NavItem onClick={() => localStorage.removeItem('login')}>{logout()}</NavItem></Col>
+          <Col><NavLink style={{ fontSize: "20px" }} >{props.user.email}</NavLink></Col>
         </Row>
       )
     }
   }
-  const JoinPage = () => {
-    props.history.push("/")
-}
+  const attPage = (e) => {
+    window.location.reload();
+  }
   return (
     <div>
       <Navbar
@@ -44,9 +42,10 @@ function BarraDeTarefa(props) {
         expand="xl"
         fixed="top"
         light
+        
       >
         <NavbarBrand href="/"><h1>Iberia</h1></NavbarBrand>
-        
+
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse navbar isOpen={!collapsed}>
           <Nav
@@ -64,18 +63,8 @@ function BarraDeTarefa(props) {
                 Menu
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem divider />
                 <DropdownItem>
                   <NavItem href="/autenticacao">{isLogin()}</NavItem>
-                </DropdownItem>
-                <DropdownItem>
-                  <NavItem onClick={() => localStorage.removeItem('login')}>{logout()}</NavItem>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <Link to={"/cadastro/funcionario"} style={{ textDecoration: 'none', color: 'black' }}>
-                    Cadastro Funcionario
-                  </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -90,13 +79,13 @@ function BarraDeTarefa(props) {
                 Setores
               </DropdownToggle>
               <DropdownMenu right>
-              <DropdownItem>
+                <DropdownItem>
                   <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
                     Noticias Anteriores
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
+                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }} >
                     Telemetria
                   </Link>
                 </DropdownItem>

@@ -11,7 +11,7 @@ function HomeTi() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemti');
+            const result = await axios('http://localhost:5000/postagemti');
             setData(result.data);
         };
 

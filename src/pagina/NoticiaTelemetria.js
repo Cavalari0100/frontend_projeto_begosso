@@ -9,7 +9,7 @@ function NoticiaTelemetria(props) {
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemtelemetria/' + id);
+            const result = await axios('http://localhost:5000/postagemtelemetria/noticiatelemetria/' + id);
             setData(result.data);
         };
 
@@ -49,7 +49,7 @@ console.log(data)
                 <Row>
                     <Col></Col>
                     <Col></Col>
-                    <Col><div><Button href='/'>Pagina Inicial</Button></div></Col>
+                    <Col><div><Button href='/hometelemetria'>Voltar a telemetria</Button></div></Col>
                 </Row>
 
             </Container>

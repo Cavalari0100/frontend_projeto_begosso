@@ -4,17 +4,16 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 function Cardgroups(props) {
     const [data, setData] = useState([]);
-    const [id, setId] = useState([]);
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem');
+            const result = await axios('http://localhost:5000/postagemiberia');  
             setData(result.data);
         };
-
         GetData();
 
     }, []);
+    
     const ultimo = data.length;
     const antepenltimo = data.length - 3;
      console.log(data)
@@ -28,9 +27,8 @@ function Cardgroups(props) {
             sm="2"
             xs="1">
             <br></br>
-            {data.slice(antepenltimo, ultimo).map((postagem, index) => {
-                const ultimo = data.length - 1;
-                const antepenltimo = data.length - 3;
+            {data.slice(antepenltimo,ultimo).map((postagem, index) => {
+                console.log(postagem)
                 return (
                     
                     <CardGroup style={{ width:'430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>

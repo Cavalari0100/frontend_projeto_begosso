@@ -16,15 +16,18 @@ import CadastroNoticiaTelemetria from './pagina/CadastroNoticiaTelemetria';
 import PostagensTelemetria from './pagina/PostagensTelemetria';
 import EmDev from "./pagina/EmDev";
 import HomeQualidade from "./pagina/HomeQualidade";
-import HomePcts from "./pagina/HomePcts";
 import NoticiaTelemetria from "./pagina/NoticiaTelemetria";
 import NoticiaBalanca from "./pagina/NoticiaBalanca";
-import NoticiaPcts from "./pagina/PostagemPcts";
 import PostagensTi from "./pagina/Postagemti";
 import NoticiaTi from "./pagina/NoticiaTi";
 import HomeTi from "./pagina/HomeTi";
 import LoginPage from "./pagina/Login";
 import CadastroFuncionario from "./pagina/CadastroFuncionario";
+import PainelDeCadastro from "./pagina/PainelDeCadastro";
+import CadastroNoticiaBalanca from "./pagina/CadastroNoticiaBalanca";
+import NoticiaQualidade from "./pagina/NoticiaQualidade";
+import CadastroNoticiaPcts from "./pagina/CadastroNoticiaPcts";
+import CadastroNoticiaTi from "./pagina/CadastroNoticiaTi";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -32,26 +35,39 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
+      {/* <Route path="/homepcts" element={<HomePcts />} />
+      <Route path='/postagempcts/:id' element={<NoticiaPcts />} /> */}
+      {/* FERRAMENTAS */}
       <Route path="/" element={<App />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/hometelemetria" element={<HomeTelemetria />} />
-      <Route path="/hometi" element={<HomeTi />} />
-      <Route path="/homebalanca" element={<HomeBalanca />} />
-      <Route path="/homequalidade" element={<HomeQualidade />} />
-      <Route path="/homepcts" element={<HomePcts />} />
-      <Route path='/b7b282fa9f614135b66cc08979b7e6f1' element={<CadastroNoticia />} />
-      <Route path='/0eb139050ed34360a93615e727c445d2' element={<CadastroNoticiaTelemetria />} />
-      <Route path='/postagem/:id' element={<Noticia />} />
-      <Route path='/postagemtelemetria/:id' element={<NoticiaTelemetria />} />
-      <Route path='/postagemti/:id' element={<NoticiaTi />} />
-      <Route path='/postagembalanca/:id' element={<NoticiaBalanca />} />
-      <Route path='/postagens' element={<PostagensAnteriores />} />
-      <Route path='/postagenstelemetria' element={<PostagensTelemetria />} />
-      <Route path='/postagensti' element={<PostagensTi />} />
-      <Route path='/postagempcts/:id' element={<NoticiaPcts />} />
       <Route path='/paginaemdesenvolvimento' element={<EmDev />} />
-      <Route path='/autenticacao' element={<LoginPage/>} />
+      <Route path='/paineldecadastros/3q1rsod2fr02b2b7nfemxntq3d3d' element={<PainelDeCadastro />} />
+      {/* AUTENTICACAO */}
+      <Route path='/autenticacao' element={<LoginPage />} />
       <Route path='/cadastro/funcionario' element={<CadastroFuncionario />} />
+      {/* IBERIA */}
+      <Route path="/home" element={<Home />} />
+      <Route path='/b7b282fa9f614135b66cc08979b7e6f1' element={<CadastroNoticia />} />
+      <Route path='/postagem/:id' element={<Noticia />} />
+      <Route path='/postagens' element={<PostagensAnteriores />} />
+      {/* TELEMETRIA */}
+      <Route path="/hometelemetria" element={<HomeTelemetria />} />
+      <Route path='/0eb139050ed34360a93615e727c445d2' element={<CadastroNoticiaTelemetria />} />
+      <Route path='/postagemtelemetria/:id' element={<NoticiaTelemetria />} />
+      <Route path='/postagenstelemetria' element={<PostagensTelemetria />} />
+      {/* QUALIDADE PCTS */}
+      <Route path="/homequalidade" element={<HomeQualidade />} />
+      <Route path='/0eb139050ed343asdasdsa4525das522' element={<CadastroNoticiaPcts />} />
+      <Route path="/postagemqualidade/:id" element={<NoticiaQualidade />} />
+      {/* BALANÇA */}
+      <Route path="/homebalanca" element={<HomeBalanca />} />
+      <Route path='/0eb139050ed34360aaskldj44asd5das' element={<CadastroNoticiaBalanca />} />
+      <Route path='/postagembalanca/:id' element={<NoticiaBalanca />} />
+      {/* TI */}
+      <Route path="/hometi" element={<HomeTi />} />
+      <Route path='/postagemti/:id' element={<NoticiaTi />} />
+      <Route path='/postagensti' element={<PostagensTi />} />
+      <Route path='/0eb139050ed34360aaskgfgvcbcb4789' element={<CadastroNoticiaTi />} />
+
     </Routes>
   </BrowserRouter>
 );

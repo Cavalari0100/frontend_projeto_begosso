@@ -9,16 +9,13 @@ function Noticia(props) {
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem/' + id);
+            const result = await axios('http://localhost:5000/postagemiberia/noticiaiberia/' + id);
             setData(result.data);
         };
 
         GetData();
-console.log(data)
+
     }, []);
-    let noticia = {
-        titulo: data.titulo
-    }
     return (
 
         <Container

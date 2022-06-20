@@ -8,7 +8,7 @@ function SlideImg() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagem');
+            const result = await axios('http://localhost:5000/postagemiberia');
             setData(result.data);
         };
 

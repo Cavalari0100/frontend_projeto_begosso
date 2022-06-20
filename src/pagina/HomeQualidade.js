@@ -11,7 +11,7 @@ function HomeQualidade() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemqualidade');
+            const result = await axios('http://localhost:5000/postagempcts');
             setData(result.data);
         };
 
@@ -94,9 +94,6 @@ function HomeQualidade() {
                                                 </CardSubtitle>
                                                 <CardText>
                                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{postagem.conteudo}</p>
-                                                </CardText>
-                                                <CardText>
-                                                    <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
                                                 </CardText>
                                                 <Button onClick={attPage}>
                                                     <Link key={postagem} to={"/postagemqualidade/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>

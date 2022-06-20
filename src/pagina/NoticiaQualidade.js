@@ -3,13 +3,13 @@ import {useParams} from "react-router-dom"
 import { Button, Col, Container, Row } from "reactstrap";
 import axios from "axios";
 import BarraDeTarefa from "../component/BarradeTarefa";
-function NoticiaBalanca(props) {
+function NoticiaQualidade(props) {
     const {id} = useParams()
     const [data, setData] = useState({});
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('http://localhost:5000/postagembalanca/noticiabalanca/' + id);
+            const result = await axios('http://localhost:5000/postagempcts/noticiapcts/' + id);
             setData(result.data);
         };
 
@@ -54,4 +54,4 @@ console.log(data)
         </Container>
     )
 }
-export default NoticiaBalanca;
+export default NoticiaQualidade;

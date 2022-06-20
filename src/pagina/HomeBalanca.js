@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { CardGroup, Card, Col, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button, Container, Row } from "reactstrap";
 import FooterPage from "../component/FooterPage";
-import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import BarraDeTarefa from "../component/BarradeTarefa";
 function HomeBalanca() {
     const [data, setData] = useState([]);
-    const [id, setId] = useState([]);
-
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagembalanca');
+            const result = await axios('http://localhost:5000/postagembalanca');
             setData(result.data);
         };
 
@@ -94,11 +91,8 @@ function HomeBalanca() {
                             md="3"
                             sm="2"
                             xs="1">
-
                             <br></br>
                             {data.slice(antepenltimo, ultimo).map((postagem, index) => {
-                                const ultimo = data.length - 1;
-                                const antepenltimo = data.length - 3;
                                 return (
                                     <CardGroup style={{ width: '430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                         <Card >
@@ -121,9 +115,6 @@ function HomeBalanca() {
                                                 </CardSubtitle>
                                                 <CardText>
                                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{postagem.conteudo}</p>
-                                                </CardText>
-                                                <CardText>
-                                                    <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
                                                 </CardText>
                                                 <Button onClick={attPage}>
                                                     <Link key={postagem} to={"/postagembalanca/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>

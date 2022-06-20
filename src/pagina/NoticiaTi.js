@@ -9,7 +9,7 @@ function NoticiaTi(props) {
     
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemti/' + id);
+            const result = await axios('http://localhost:5000/postagemti/noticiatia/' + id);
             setData(result.data);
         };
 

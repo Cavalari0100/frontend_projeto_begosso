@@ -5,7 +5,7 @@ import BarraDeTarefa from "../component/BarradeTarefa";
 function CadastroNoticiaTelemetria() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
-    const url = 'https://serviceiberia.herokuapp.com/novapostagemtelemetria';
+    const url = 'http://localhost:5000/postagemtelemetria/novapostagem';
 
     const InsertNewPostagem = (e) => {
         e.preventDefault();
@@ -22,6 +22,7 @@ function CadastroNoticiaTelemetria() {
 
     const attPage = (e) => {
         window.location.reload();
+        window.location = "/hometelemetria";
     }
 
     return (
@@ -29,8 +30,8 @@ function CadastroNoticiaTelemetria() {
             className="bg-light border"
             fluid
             style={{ padding: "4rem" }}>
-                <BarraDeTarefa/>
-            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }}  alt="imgFromIberia"/>
+            <BarraDeTarefa />
+            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Row>
                 <Col>
                 </Col>
@@ -103,9 +104,18 @@ function CadastroNoticiaTelemetria() {
                             size: 10
                         }}
                     >
-                        <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
-                            Submit
-                        </Button>
+                        <Row>
+                            <Col>
+                                <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
+                                    Submit
+                                </Button>
+                            </Col>
+                            <Col>
+                                <Button style={{ background: "#3399ff" }} to={'/hometelemetria'} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
+                                    Pagina Telemetria
+                                </Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </FormGroup>
             </Form>

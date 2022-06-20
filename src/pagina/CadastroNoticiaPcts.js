@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Container, Form, FormGroup, Label, Col, FormText, Input, Button } from "reactstrap";
+import { Container, Form, FormGroup, Label, Col, Row, FormText, Input, Button } from "reactstrap";
 import axios from "axios";
-import BarradeTarefa from '../component/BarradeTarefa';
-function CadastroNoticia() {
+import BarraDeTarefa from "../component/BarradeTarefa";
+
+function CadastroNoticiaPcts() {
 
     const [newPostagem, setNewPostagem] = useState({ titulo: '', conteudo: '', autor: '' });
-    const url = 'http://localhost:5000/postagemiberia/novapostagem';
+    const url = 'http://localhost:5000/postagempcts/novapostagem';
 
     const InsertNewPostagem = (e) => {
         e.preventDefault();
@@ -21,20 +22,27 @@ function CadastroNoticia() {
     }
 
     const attPage = (e) => {
-        if (InsertNewPostagem === true) {
-            alert('Noticia cadastrada com sucesso!!');
-            window.location.reload();
-        }
+        window.location.reload();
+        window.location = "/homequalidade";
     }
 
     return (
         <Container
             className="bg-light border"
             fluid
-            style={{ padding: "6rem" }}>
-
-            <BarradeTarefa />
-            <img src="/assets/img5.png" style={{ width: '100%' }} alt="imgFromIberia" />
+            style={{ padding: "4rem" }}>
+            <BarraDeTarefa />
+            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
+            <Row>
+                <Col>
+                </Col>
+                <Col>
+                    <h3>Nova Postagem Qualidade(Pcts)</h3>
+                </Col>
+                <Col>
+                </Col>
+            </Row>
+            <hr></hr>
             <Form onSubmit={InsertNewPostagem}>
                 <FormGroup row>
                     <Label
@@ -97,13 +105,22 @@ function CadastroNoticia() {
                             size: 10
                         }}
                     >
-                        <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
-                            Submit
-                        </Button>
+                        <Row>
+                            <Col>
+                                <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
+                                    Submit
+                                </Button>
+                            </Col>
+                            <Col>
+                                <Button style={{ background: "#3399ff" }} to={'/hometelemetria'} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
+                                    Pagina Telemetria
+                                </Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </FormGroup>
             </Form>
         </Container>
     )
 }
-export default CadastroNoticia;
+export default CadastroNoticiaPcts;
