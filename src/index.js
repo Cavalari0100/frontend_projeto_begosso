@@ -28,7 +28,12 @@ import CadastroNoticiaBalanca from "./pagina/CadastroNoticiaBalanca";
 import NoticiaQualidade from "./pagina/NoticiaQualidade";
 import CadastroNoticiaPcts from "./pagina/CadastroNoticiaPcts";
 import CadastroNoticiaTi from "./pagina/CadastroNoticiaTi";
-
+import HomeRh from "./pagina/HomeRh"
+import CadastroNoticiaRh from "./pagina/CadastroNoticiaRh";
+import NoticiaRh from "./pagina/NoticiaRh";
+import Relatorios from "./pagina/Relatorios";
+import RelatorioPostagem from "./pagina/RelatorioPostagem";
+import RelatorioClimaTempo from "./pagina/RelatorioClimaTempo";
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
@@ -67,7 +72,14 @@ root.render(
       <Route path='/postagemti/:id' element={<NoticiaTi />} />
       <Route path='/postagensti' element={<PostagensTi />} />
       <Route path='/0eb139050ed34360aaskgfgvcbcb4789' element={<CadastroNoticiaTi />} />
-
+      {/* RH */}
+      <Route path='/homerh' element={<HomeRh />} />
+      <Route path='/0eb139050ed34360adasdrsidjas8asd' element={<CadastroNoticiaRh />} />
+      <Route path='/postagemrh/:id' element={<NoticiaRh />} />
+      {/* RELATORIOS */}
+      <Route path='/relatoriofuncionarios' element={<Relatorios />} />
+      <Route path='/relatoriodepostagens' element={<RelatorioPostagem />} />
+      <Route path='/relatorioclimatempo' element={<RelatorioClimaTempo />} />
     </Routes>
   </BrowserRouter>
 );

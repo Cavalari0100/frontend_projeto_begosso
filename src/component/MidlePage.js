@@ -1,6 +1,5 @@
 import React from "react";
 import {Col , Container, Row } from "reactstrap";
-import CardsSetores from "./CardsSetores";
 function MidlePage() {
     return (
         <Container>
@@ -52,7 +51,7 @@ function MidlePage() {
                 
             </Row>
             <hr></hr>
-            <CardsSetores/>
+            
         </Container>
     )
 }

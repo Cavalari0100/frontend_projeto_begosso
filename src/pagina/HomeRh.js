@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CardGroup, Card, Col, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button, Container, Row } from "reactstrap";
 import FooterPage from "../component/FooterPage";
-import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import BarraDeTarefa from "../component/BarradeTarefa";
@@ -11,7 +10,7 @@ function HomeTi() {
 
     useEffect(() => {
         const GetData = async () => {
-            const result = await axios('https://serviceiberia.herokuapp.com/postagemti');
+            const result = await axios('http://localhost:5000/postagemrh');
             setData(result.data);
         };
 
@@ -28,12 +27,12 @@ function HomeTi() {
     return (
         <div style={{ paddingTop: '3em' }}>
             <BarraDeTarefa />
-            <img src="/assets/bannerTi.png" style={{ width: '100%' }} alt="imgFromIberia" />
+            <img src="/assets/bannerRh.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Container >
                 <Row>
                     <Col>
                         <Container>
-                            <h1>Historia sobre nosso departamento de TI</h1>
+                            <h1>Historia sobre nosso departamento de Recursos Humanos</h1>
                             <Row
                                 md="2"
                                 sm="2"
@@ -41,15 +40,18 @@ function HomeTi() {
 
                                 <Col>
                                     <p style={{ textAlign: "justify" }}>
-                                        O projeto de telemetria agrícola teve seu início na iberia no ano de 2015,
-                                        com o monitoramento dos equipamentos de colheita, neste mesmo ano implantamos
-                                        mais dois projetos,  FUT (Fila unica de Transbordo) e CDC (Certificado Digital de Cana)
-                                        , deixando todo o CTT 100% automatizado. No ano de 2017 iniciamos com mais um projeto
-                                        chamado TPL, onde colocamos os computadores de bordo para controlar as operações agrícolas.
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap into
+                                        electronic typesetting, remaining essentially unchanged. It was popularised in
+                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                        and more recently with desktop publishing software like Aldus PageMaker including
+                                        versions of Lorem Ipsum.
                                     </p>
                                 </Col>
                                 <Col>
-                                    <img src="assets/bannerTi.png" style={{ width: '100%' }} />
+                                    <img src="assets/bannerRh.png" style={{ width: '100%' }} />
                                 </Col>
                             </Row>
                         </Container>
@@ -71,11 +73,11 @@ function HomeTi() {
                                 const ultimo = data.length - 1;
                                 const antepenltimo = data.length - 3;
                                 return (
-                                    <CardGroup style={{ width:'430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+                                    <CardGroup style={{ width: '430px', boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                         <Card >
                                             <CardImg
                                                 alt="Card image cap"
-                                                src="assets/bannerTi.png"
+                                                src="assets/bannerRh.png"
                                                 top
                                                 width="100%"
                                             />
@@ -96,7 +98,7 @@ function HomeTi() {
                                                     <p key={postagem} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}> Setor : {postagem.categoria}</p>
                                                 </CardText>
                                                 <Button onClick={attPage}>
-                                                    <Link key={postagem} to={"/postagemti/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
+                                                    <Link key={postagem} to={"/postagemrh/" + postagem._id} style={{ color: 'white', textDecoration: 'none' }}>Mais..</Link>
                                                 </Button>
                                             </CardBody>
                                         </Card>

@@ -20,7 +20,7 @@ function CadastroFuncionario(props) {
     }
 
     const JoinPage = () => {
-        props.history.push("/")
+        window.location.reload();
     }
     return (
         <Container>
@@ -78,7 +78,7 @@ function CadastroFuncionario(props) {
                                 />
                             </FormGroup>
                             <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1"   onClick={JoinPage} >
-                                Submit
+                                Cadastrar
                             </Button>
                         </Form>
                     </Col>

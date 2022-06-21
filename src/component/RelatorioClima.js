@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 
-function PrevisaoDoTempo() {
+function RelatorioClima() {
 
   const [location, setLocation] = useState(false);
   const [weather, setWeather] = useState(false);
@@ -18,7 +18,6 @@ function PrevisaoDoTempo() {
     });
     setWeather(res.data);
   }
-  console.log(weather)
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       getWeather(position.coords.latitude, position.coords.longitude);
@@ -52,6 +51,7 @@ function PrevisaoDoTempo() {
             <Fragment>
               <h4>Tempo/Clima de hoje </h4>
               <p><b>{weather['weather'][0]['description']}</b></p>
+              <p><b>{weather['name']}</b></p>
               <hr />
               <ul>
                 <li>Temperatura atual: {weather['main']['temp']}°</li>
@@ -60,6 +60,7 @@ function PrevisaoDoTempo() {
                 <li>Pressão: {weather['main']['pressure']} hpa</li>
                 <li>Humidade: {weather['main']['humidity']}%</li>
                 <li>Velocidade do vento: {weather['wind']['speed']}K/h</li>
+                <li>Velocidade do vento: {weather['sys']['country']}K/h</li>
               </ul>
             </Fragment>
           </div>
@@ -69,4 +70,4 @@ function PrevisaoDoTempo() {
     }
   }
 }
-export default PrevisaoDoTempo;
+export default RelatorioClima;

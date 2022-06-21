@@ -5,7 +5,7 @@ import FooterPage from "../component/FooterPage";
 import MidlePage from "../component/MidlePage";
 import PrevisaoDoTempo from "../component/PrevisaoDoTempo";
 import SlideImg from "../component/SlideImg";
-
+import CardsSetores from "../component/CardsSetores";
 function Home() {
     return (
         <div style={{ paddingTop: '3em' }}>
@@ -16,18 +16,23 @@ function Home() {
                         <MidlePage />
                     </Col>
                 </Row>
-                <hr></hr>
+            </Container>
+            <CardsSetores />
+            <hr></hr>
+            <Container>
                 <Row>
                     <Col><PrevisaoDoTempo /></Col>
                 </Row>
-                <br></br>
+            </Container>
+            <br></br>
+            <Container>
                 <Row id="destaques">
                     <Col>
                         <Cardgroups />
                     </Col>
                 </Row>
-                <br></br>
             </Container>
+            <br></br>
             <FooterPage />
         </div>
     )

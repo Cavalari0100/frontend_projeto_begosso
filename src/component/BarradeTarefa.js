@@ -25,9 +25,9 @@ function BarraDeTarefa(props) {
     if (props.user) {
       return (
         <Row>
-          <Col><NavLink href="/paineldecadastros/3q1rsod2fr02b2b7nfemxntq3d3d">Cadastros</NavLink></Col>
+          <Col><NavLink href="/paineldecadastros/3q1rsod2fr02b2b7nfemxntq3d3d">Ferramentas</NavLink></Col>
           <Col><NavItem onClick={() => localStorage.removeItem('login')}>{logout()}</NavItem></Col>
-          <Col><NavLink style={{ fontSize: "20px" }} >{props.user.email}</NavLink></Col>
+          <Col><NavbarText style={{ fontSize: "20px" , color:'green' }} >{props.user.email}</NavbarText></Col>
         </Row>
       )
     }
@@ -80,11 +80,6 @@ function BarraDeTarefa(props) {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <Link to={"/paginaemdesenvolvimento"} style={{ textDecoration: 'none', color: 'black' }}>
-                    Noticias Anteriores
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
                   <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }} >
                     Telemetria
                   </Link>
@@ -109,26 +104,11 @@ function BarraDeTarefa(props) {
                     TI
                   </Link>
                 </DropdownItem>
-                {/* <DropdownItem>
-                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
-                    Qualidade
+                <DropdownItem>
+                  <Link to={"/homerh"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Recursos Humanos
                   </Link>
                 </DropdownItem>
-                <DropdownItem>
-                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
-                    TI
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
-                    PCTS
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to={"/hometelemetria"} style={{ textDecoration: 'none', color: 'black' }}>
-                    P&D
-                  </Link>
-                </DropdownItem> */}
                 <DropdownItem />
               </DropdownMenu>
             </UncontrolledDropdown>
