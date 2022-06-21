@@ -20,7 +20,7 @@ function CadastroFuncionario(props) {
     }
 
     const JoinPage = () => {
-        window.location.reload();
+        window.history('/')
     }
     return (
         <Container>

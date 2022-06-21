@@ -112,7 +112,7 @@ function CadastroNoticiaBalanca() {
                             </Col>
                             <Col>
                                 <Button style={{ background: "#3399ff" }} to={'/hometelemetria'} type="submit" className="btn btn-secondary mb-1" onClick={attPage}>
-                                    Pagina Telemetria
+                                    Pagina Balnaça
                                 </Button>
                             </Col>
                         </Row>
