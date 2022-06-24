@@ -29,16 +29,13 @@ function Chartpostagens() {
     }
     return (
         <div>
-            <Col md={6}>
+            <Col>
                 <Chart
                     chartType="ColumnChart"
                     data={postagensPorSetor(data)}
-
                     options={{
-                        chartArea: {
-                            width: '400px',
-
-                        },
+                        width: 800,
+                        height: 500,
                         colors: ['green'],
                         title: 'Postagens por Setores',
                         hAxis: {

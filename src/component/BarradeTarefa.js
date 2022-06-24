@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function BarraDeTarefa(props) {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => setCollapsed(!collapsed);
-
+  console.log(props.user)
   function logout() {
     function garbageLocalStorage() {
       localStorage.removeItem('token')
@@ -26,8 +26,8 @@ function BarraDeTarefa(props) {
       return (
         <Row>
           <Col><NavLink href="/paineldecadastros/3q1rsod2fr02b2b7nfemxntq3d3d">Ferramentas</NavLink></Col>
-          <Col><NavItem onClick={() => localStorage.removeItem('login')}>{logout()}</NavItem></Col>
-          <Col><NavbarText style={{ fontSize: "20px" , color:'green' }} >{props.user.email}</NavbarText></Col>
+          <Col><p style={{paddingTop:'4px' , fontSize: "20px" , color:'green'}}>{props.user.email}</p></Col>
+          <Col><NavbarText onClick={() => localStorage.removeItem('login')}>{logout()}</NavbarText></Col>
         </Row>
       )
     }
@@ -92,11 +92,6 @@ function BarraDeTarefa(props) {
                 <DropdownItem>
                   <Link to={"/homequalidade"} style={{ textDecoration: 'none', color: 'black' }}>
                     Qualidade
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to={"/homepcts"} style={{ textDecoration: 'none', color: 'black' }}>
-                    PCTS
                   </Link>
                 </DropdownItem>
                 <DropdownItem>

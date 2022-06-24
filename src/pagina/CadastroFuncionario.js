@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Col, Container, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import { Alert, Button, Col, Container, Form, FormGroup, Input, Label, Row } from "reactstrap";
 import BarraDeTarefa from "../component/BarradeTarefa";
 import axios from "axios";
 function CadastroFuncionario(props) {
@@ -20,7 +20,7 @@ function CadastroFuncionario(props) {
     }
 
     const JoinPage = () => {
-        window.history('/')
+        alert(props.res)
     }
     return (
         <Container>
@@ -77,7 +77,7 @@ function CadastroFuncionario(props) {
                                     value={newFuncionario.confirmpassword} onChange={onChange}
                                 />
                             </FormGroup>
-                            <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1"   onClick={JoinPage} >
+                            <Button style={{ background: "#3399ff" }} type="submit" className="btn btn-secondary mb-1" onClick={JoinPage} >
                                 Cadastrar
                             </Button>
                         </Form>
