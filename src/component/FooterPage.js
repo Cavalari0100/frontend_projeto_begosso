@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 function FooterPage() {
     return (
-        <div style={{ backgroundColor: '#229954', padding: '6rem',paddingBottom:'6rem', width: 'auto',height:'auto' }}>
+        <div style={{ backgroundColor: 'pink', padding: '6rem',paddingBottom:'6rem', width: 'auto',height:'auto' }}>
             <Container>
                 {/* <Row
                     md="3"
