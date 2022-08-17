@@ -44,6 +44,9 @@ function TablePostagens() {
                         <th>
                             Qtde Materia Recursos Humanos
                         </th>
+                        <th>
+                            Media total de postagens%
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,6 +73,9 @@ function TablePostagens() {
                                 </td>
                                 <td key={postagens} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                                     {postagens.postagemf}
+                                </td>
+                                <td key={postagens} style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                    {(postagens.postagema + postagens.postagemb + postagens.postagemc + postagens.postagemd + postagens.postageme + postagens.postagemf / 6).toFixed(2)}%
                                 </td>
                             </tr>
                         )

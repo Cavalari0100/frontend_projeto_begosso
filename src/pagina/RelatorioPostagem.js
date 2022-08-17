@@ -5,8 +5,11 @@ import TablePostagens from "../component/TablePostagens";
 function RelatorioPostagem() {
     return (
         <div style={{ paddingTop: '6rem' }}>
+            <h1>Relatorio de quantidade de postagem por setor</h1>
+            <hr></hr>
             <BarraDeTarefa />
             <TablePostagens />
+            <hr></hr>
             <Chartpostagens />
         </div>
     )

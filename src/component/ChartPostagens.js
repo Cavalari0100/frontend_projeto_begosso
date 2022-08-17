@@ -29,7 +29,7 @@ function Chartpostagens() {
     }
     return (
         <div>
-            <Col>
+            <Row>
                 <Chart
                     chartType="ColumnChart"
                     data={postagensPorSetor(data)}
@@ -48,7 +48,26 @@ function Chartpostagens() {
                     }}
                     rootProps={{ 'data-testid': '1' }}
                 />
-            </Col>
+                <Chart
+                    chartType="PieChart"
+                    data={postagensPorSetor(data)}
+                    options={{
+                        width: 800,
+                        height: 500,
+                        colors: ['green' , 'red' , 'yellow','blue','purple','orange'],
+                        is3D: false,
+                        title: 'Postagens por Setores',
+                        hAxis: {
+                            title: 'Setores',
+                            minValue: 0
+                        },
+                        vAxis: {
+                            title: ' Quantidade de postagens'
+                        }
+                    }}
+                    rootProps={{ 'data-testid': '1' }}
+                />
+            </Row>
         </div>
     )
 }
