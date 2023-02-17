@@ -22,7 +22,7 @@ function CardsSetores() {
                             />
                             <CardBody>
                                 <CardText>
-                                    <p style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Telemetria</p>
+                                    <p style={{ maxWidth: "50ch", overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Entomologia</p>
                                 </CardText>
                                 <Button onClick={attPage}>
                                     <a href="/hometelemetria" style={{ textDecoration: 'none', color: 'white' }}>Acessar</a>

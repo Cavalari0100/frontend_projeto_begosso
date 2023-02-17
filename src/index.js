@@ -34,6 +34,7 @@ import NoticiaRh from "./pagina/NoticiaRh";
 import Relatorios from "./pagina/Relatorios";
 import RelatorioPostagem from "./pagina/RelatorioPostagem";
 import RelatorioClimaTempo from "./pagina/RelatorioClimaTempo";
+import Adocao from "./pagina/Adocao";
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
@@ -80,6 +81,7 @@ root.render(
       <Route path='/relatoriofuncionarios' element={<Relatorios />} />
       <Route path='/relatoriodepostagens' element={<RelatorioPostagem />} />
       <Route path='/relatorioclimatempo' element={<RelatorioClimaTempo />} />
+      <Route path='/adocaoresponsavel' element={<Adocao />} />
     </Routes>
   </BrowserRouter>
 );

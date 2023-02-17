@@ -104,6 +104,11 @@ function BarraDeTarefa(props) {
                     Recursos Humanos
                   </Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to={"/adocaoresponsavel"} style={{ textDecoration: 'none', color: 'black' }}>
+                    Adoção
+                  </Link>
+                </DropdownItem>
                 <DropdownItem />
               </DropdownMenu>
             </UncontrolledDropdown>

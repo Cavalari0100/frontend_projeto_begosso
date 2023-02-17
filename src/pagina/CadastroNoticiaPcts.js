@@ -32,7 +32,7 @@ function CadastroNoticiaPcts() {
             fluid
             style={{ padding: "4rem" }}>
             <BarraDeTarefa />
-            <img src="/assets/bannerTelemetria.png" style={{ width: '100%' }} alt="imgFromIberia" />
+            <img src="/assets/img8.png" style={{ width: '100%' }} alt="imgFromIberia" />
             <Row>
                 <Col>
                 </Col>

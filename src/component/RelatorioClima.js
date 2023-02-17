@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import { Row ,Col} from 'reactstrap';
-
 function RelatorioClima() {
 
   const [location, setLocation] = useState(false);
